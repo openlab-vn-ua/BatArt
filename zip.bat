@@ -105,11 +105,12 @@ public class ZipUtil
 
             try
             {
-                Console.Write(string.Format("Archiving {0} from {1} [R]", Arc, Src) + (Options_ExcludeParsent ? " [EP]" : ""));
+                Console.WriteLine(string.Format("Archiving {0} from {1} [R]", Arc, Src) + (Options_ExcludeParsent ? " [EP]" : ""));
                 System.IO.Compression.ZipFile.CreateFromDirectory(Src, Arc, System.IO.Compression.CompressionLevel.Optimal, !Options_ExcludeParsent);
             }
             catch (Exception e)
             {
+                Console.Error.WriteLine(String.Format("ERROR archiving {0}", Arc));
                 Console.Error.Write(e);
                 return FAIL;
             }
@@ -123,12 +124,13 @@ public class ZipUtil
 
             try
             {
-                Console.Write(string.Format("Extracting {0} to {1} [O]", Arc, Dst));
+                Console.WriteLine(string.Format("Extracting {0} to {1}", Arc, Dst));
                 System.IO.Compression.ZipFile.ExtractToDirectory(Arc, Dst);
               //System.IO.Compression.ZipFile.ExtractToDirectory(Arc, Dst , Options_Overwrite);
             }
             catch (Exception e)
             {
+                Console.Error.WriteLine(String.Format("ERROR extracting {0}", Arc));
                 Console.Error.Write(e);
                 return FAIL;
             }
