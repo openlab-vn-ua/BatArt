@@ -52,7 +52,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-/// Provides functions to capture the entire screen, or a particular window, and save it to a file. 
+/// Simple utility to create .zip files without external files under Windows
 
 public class ZipUtil
 {
