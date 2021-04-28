@@ -2,11 +2,11 @@
 Command .bat files as .cs hybrids (the .bat files written on CSharp that auto compiles and runs).
 Usable and cool .bat examples:
 
-- [Zip](#zip.bat) : Create or extract .zip archives
-- [Free_ASN1_OID](#free_asn1_oid.bat) : Create free ASN1 OID based on random GUID
-- [CS_RegExp](#cs_regexp.bat) : CSharp regular expression search or search-end-replace in text files
-- [Screenshot](#screenshot.bat) : Save a screenshot (of whole screen or single a window)
-- [Hello_World](#hello_world.bat) : Demo application use it as template you create you own .bat files on .cs
+- [zip.bat](#Zip) : Create or extract .zip archives
+- [free_asn1_oid.bat](#Free_ASN1_OID) : Create free ASN1 OID based on random GUID
+- [cs_regexp.bat](#CS_RegExp) : CSharp regular expression search or search-end-replace in text files
+- [screenshot.bat](#Screenshot) : Save a screenshot (of whole screen or single a window)
+- [hello_world.bat](#Hello_World) : Demo application use it as template you create you own .bat files on .cs
 
 This technology allows you to create command line scripts on CSharp and use full power of .NetFramework (already present on your machine as part of Windows XP or later). You may use standart input and standart output and exit code without any artifacts. 
 
