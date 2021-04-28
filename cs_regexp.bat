@@ -65,19 +65,20 @@ public class CsRegExp
         //clears the extension from the script name
         String scriptName = Environment.GetCommandLineArgs()[0];
         scriptName = Path.GetFileNameWithoutExtension(scriptName);
-        Console.WriteLine(scriptName + " simple CS regexp proccessor.");
+        Console.WriteLine(scriptName + " simple CS regexp processor.");
         Console.WriteLine("");
         Console.WriteLine("Usage:");
         Console.WriteLine(" " + scriptName + " {Options} [SearchRegexp] {ReplaceExp (optional)} < input > output");
         Console.WriteLine("");
         Console.WriteLine("SearchRegexp: CS regular expression to provide to Regex object");
         Console.WriteLine(" https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.matches");
-        Console.WriteLine(" if no ReplaceExp specified, returns matches (each match follwed by EOL)");
+        Console.WriteLine(" if no ReplaceExp specified, returns matches (each match followed by EOL)");
         Console.WriteLine("ReplaceExp: Regexp.Replace replacement string (use $n to address pattern from regexp)");
         Console.WriteLine(" https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.replace");
+        Console.WriteLine(" if ReplaceExp specified, prints text after replace");
         Console.WriteLine("Options:");
         Console.WriteLine(" -h    : show this help");
-        Console.WriteLine(" -N    : print line number before each line that macthes (search only)");
+        Console.WriteLine(" -N    : print line number before each line that matches (search only)");
         Console.WriteLine(" -eol- : do not add eol after each match print");
         Console.WriteLine(" -ropts=Option,Option... : Set Regexp options/flags (i,m,s may also be used)");
     }
