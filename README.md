@@ -1,9 +1,18 @@
 # BatArt
-Usable and cool .bat files
-Implemented as .bat to .cs hybrids (.bat files that compiles as .cs).
+Command .bat files as .cs hybrids (the .bat files written on CSharp that auto compiles and runs).
+Usable and cool .bat examples:
 
-This technology allows you to create command line scripts on CSharp and use full power of .NetFramework (already present on your machine as part of Windows XP or later). The files do not relay on PowerShell, regular .cs syntax may be used for command line scripts.
-These files need .NetFramework to operate (automatically compile their own CSharp parts and run as .exe files).
+- [Zip](#zip.bat) : Create or extract .zip archives
+- [Free_ASN1_OID](#free_asn1_oid.bat) : Create free ASN1 OID based on random GUID
+- [CS_RegExp](#cs_regexp.bat) : CSharp regular expression search or search-end-replace in text files
+- [Screenshot](#screenshot.bat) : Save a screenshot (of whole screen or single a window)
+- [Hello_World](#hello_world.bat) : Demo application use it as template you create you own .bat files on .cs
+
+This technology allows you to create command line scripts on CSharp and use full power of .NetFramework (already present on your machine as part of Windows XP or later). You may use standart input and standart output and exit code without any artifacts. 
+
+These files use .NetFramework to automatically compile their own CSharp parts once and than run it as .exe files.
+
+*The files do not relay on PowerShell, regular .cs syntax may be used for command line scripts.*
 
 ## Zip
 Command .bat script file to create or extract .zip archives (need .NetFramework to operate, .cs to .bat hybryd)
@@ -20,10 +29,10 @@ target   - target folder for 'x' operation
 ```
 
 ## Free_ASN1_OID
-.bat command file script to create free ASN1 OID based on random GUID (need .NetFramework to operate, .cs to .bat hybryd).
+Command .bat file script file to create free ASN1 OID based on random GUID
 
 Prints generated random OID to standard output. 
-Uses GUID to OID mappind rules provided by MS (based on MS-published VB script)
+Uses GUID to OID mapping rules provided by MS (based on MS-published VB script)
 OID generated in Microsoft-provided home 1.2.840.113556.1.8000.2554
 
 See https://docs.microsoft.com/en-us/windows/win32/ad/obtaining-an-object-identifier-from-microsoft
@@ -42,21 +51,21 @@ options:
 
 ## CS_RegExp
 
-Command .bat script file simple RegExp search or searc-and-replace proccessor (need .NetFramework to operate, .cs to .bat hybryd).
+Command .bat script file simple RegExp search or search-and-replace processor
 Uses .cs RegExp
 
 ```
-cs_regexp.bat simple CS regexp proccessor
+cs_regexp.bat simple CS regexp processor
 Usage:
 cs_regexp {Options} [SearchRegexp] {ReplaceExp (optional)} < input > output
 SearchRegexp: CS regular expression to provide to Regex object
  https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.matches
- if no ReplaceExp specified, returns matches (each match follwed by EOL)
+ if no ReplaceExp specified, returns matches (each match followed by EOL)
 ReplaceExp: Regexp.Replace replacement string (use $n to address pattern from regexp)
  https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.replace
 Options:
  -h    : show help
- -N    : print line number before each line that macthes (search only)
+ -N    : print line number before each line that matches (search only)
  -eol- : do not add eol after each match print
  -ropts=Option,Option... : Set Regexp options/flags (i,m,s may also be used)
 ```
@@ -88,8 +97,11 @@ WindowTitle - instead of capture whole screen you can point to a window
 
 ## Hello_World
 
-Command .bat script file to print out `Hello World!` (need .NetFramework to operate, .cs to .bat hybryd).
-Just technology demosntrator to make you own .cs to .bat hybrid files without any console output side effects.
+Command .bat script file to print out `Hello World!` (need .NetFramework to operate, .cs to .bat hybrid).
+Just technology demonstrator to make you own .cs to .bat hybrid files without any console output side effects.
 
-Use it as stub for you own .cs to .bat hybrids utilities
+Use it as stub for you own .cs to .bat hybrids utilities.
+Just replace .cs code part after .bat prologue with your own code. 
+
+If you need external assemblies add them to `CSC_OPS` options var in .bat section, example: `set CSC_OPS=/r:"System.IO.Compression.FileSystem.dll"`
 
