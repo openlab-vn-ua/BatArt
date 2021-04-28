@@ -103,5 +103,8 @@ Just technology demonstrator to make you own .cs to .bat hybrid files without an
 Use it as stub for you own .cs to .bat hybrids utilities.
 Just replace .cs code part after .bat prologue with your own code. 
 
-If you need external assemblies add them to `CSC_OPS` options var in .bat section, example: `set CSC_OPS=/r:"System.IO.Compression.FileSystem.dll"`
+If you need external assemblies add them to `CSC_OPS` options var in .bat section, example: 
+```
+set CSC_OPS=/r:"System.IO.Compression.FileSystem.dll"
+```
 
