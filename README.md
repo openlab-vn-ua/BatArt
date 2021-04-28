@@ -2,8 +2,8 @@
 Usable and cool .bat files
 Implemented as .bat to .cs hybrids (.bat files that compiles as .cs).
 
+This technology allows you to create command line scripts on CSharp and use full power of .NetFramework (already present on your machine as part of Windows XP or later). The files do not relay on PowerShell, regular .cs syntax may be used for command line scripts.
 These files need .NetFramework to operate (automatically compile their own CSharp parts and run as .exe files).
-This technology allows you to create command line scripts on CSharp and easily use full power of .NetFramework (already present on your machine as part of Windows XP or later). The files do not relay on PowerShell, regular .cs syntax may be used for command line scripts.
 
 ## Zip
 Command .bat script file to create or extract .zip archives (need .NetFramework to operate, .cs to .bat hybryd)
