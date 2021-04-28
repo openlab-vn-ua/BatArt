@@ -61,6 +61,31 @@ Options:
  -ropts=Option,Option... : Set Regexp options/flags (i,m,s may also be used)
 ```
 
+## Screenshot
+
+Command .bat script file to create screenshot (whole screen or current active window or specified window).
+Result image may be saved in various formats (.jpg, .png, .bmp, .gif etc).
+
+Based on:
+https://github.com/npocmaka/batch.scripts/blob/master/hybrids/.net/c/screenCapture.bat
+
+See also:
+rem http://www.developerfusion.com/code/4630/capture-a-screen-shot/
+
+```
+screenshot.bat captures the screen or the active window and saves it to a file.
+
+Usage:
+screenshot filename [WindowTitle]
+
+filename - the file where the screen capture will be saved
+     allowed file extensions are - Bmp,Emf,Exif,Gif,Icon,Jpeg,Png,Tiff,Wmf.
+WindowTitle - instead of capture whole screen you can point to a window 
+     with a title which will put on focus and captuted.
+     For WindowTitle you can pass only the first few characters.
+     If don't want to change the current active window pass only ""
+```
+
 ## Hello_World
 
 Command .bat script file to print out `Hello World!` (need .NetFramework to operate, .cs to .bat hybryd).
