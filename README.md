@@ -63,6 +63,7 @@ SearchRegexp: CS regular expression to provide to Regex object
  if no ReplaceExp specified, returns matches (each match followed by EOL)
 ReplaceExp: Regexp.Replace replacement string (use $n to address pattern from regexp)
  https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.replace
+ if ReplaceExp specified, prints text after replace
 Options:
  -h    : show help
  -N    : print line number before each line that matches (search only)
