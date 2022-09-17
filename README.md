@@ -1,5 +1,5 @@
 # BatArt
-Command .bat files as .cs hybrids (the .bat files written on CSharp that auto compiles and runs).
+Command .bat files aand .bat to .cs hybrids (the .bat files written on CSharp that auto compiles and runs).
 Usable and cool .bat examples:
 
 - [zip.bat](#Zip) : Create or extract .zip archives
@@ -7,6 +7,7 @@ Usable and cool .bat examples:
 - [cs_regexp.bat](#CS_RegExp) : CSharp regular expression search or search-end-replace in text files
 - [screenshot.bat](#Screenshot) : Save a screenshot (of whole screen or single a window)
 - [hello_world.bat](#Hello_World) : Demo application use it as template you create you own .bat files on .cs
+- [waste.bat](#Waste) : Fill free space on your disk drive with waste (useful after you delete something sensitive)
 
 This technology allows you to create command line scripts on CSharp and use full power of .NetFramework (already present on your machine as part of Windows XP or later). You may use standart input and standart output and exit code without any artifacts. 
 
@@ -108,4 +109,15 @@ If you need external assemblies add them to `CSC_OPS` options var in .bat sectio
 ```
 set CSC_OPS=/r:"System.IO.Compression.FileSystem.dll"
 ```
+
+## Waste
+
+Fill free space on your disk drive with waste (useful after you delete something sensitive).
+Empty space filled with 1G chunks of waste. operation stopped once no more free space or 100T is written
+
+```
+Usage:
+waste
+```
+
 
