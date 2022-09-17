@@ -113,7 +113,8 @@ set CSC_OPS=/r:"System.IO.Compression.FileSystem.dll"
 ## Waste
 
 Fill free space on your disk drive with waste (useful after you delete something sensitive).
-Empty space filled with 1G chunks of waste. operation stopped once no more free space or 100T is written
+Empty space filled with 1G chunks of waste.
+Operation will be stopped when there are no more free space or 100T is written.
 
 ```
 Usage:
