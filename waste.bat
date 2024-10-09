@@ -39,7 +39,7 @@ copy /b wasteX6M.wat+wasteX6M.wat+wasteX6M.wat+wasteX6M.wat waste_1G.wat > nul |
 ::copy /b waste_4T.wat+waste_4T.wat+waste_4T.wat+waste_4T.wat waste16T.wat > nul || (goto done) & Echo Fill 16T
 ::copy /b waste16T.wat+waste16T.wat+waste16T.wat+waste16T.wat waste64T.wat > nul || (goto done) & Echo Fill 64T
 ::copy /b waste64T.wat+waste64T.wat+waste64T.wat+waste64T.wat wasteX6T.wat > nul || (goto done) & Echo Fill 256T
-::copy /b wasteX6T.wat+wasteX6T.wat+wasteX6T.wat+wasteX6T.wat waste_1T.wat > nul || (goto done) & Echo Fill 1P
+::copy /b wasteX6T.wat+wasteX6T.wat+wasteX6T.wat+wasteX6T.wat waste_1P.wat > nul || (goto done) & Echo Fill 1P
 
 Echo Running mainstream...
 ::Rem up 100T
